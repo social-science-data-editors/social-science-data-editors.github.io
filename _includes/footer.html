@@ -1,0 +1,22 @@
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-inline">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    {% for item in site.navbar  %}
+                      <li class="footer-menu-divider">&sdot;</li>    
+                      <a class="page-scroll" href="{{ item.link }}">{{ item.title }}</a>       
+                    {% endfor %}
+                </ul>
+                <p class="copyright text-muted small">{{ site.copyright }}</p>
+                <p class="copyright text-muted small">{% include credits.html %}</p>
+            </div>
+            <div class="col-md-3 text-muted small">
+            </div>
+        </div>
+    </div>
+</footer>

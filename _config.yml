@@ -1,0 +1,76 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+url: https://social-science-data-editors.github.io/
+title: Social Science Data Editors
+email: 
+author: Lars Vilhuber
+description: > # "Write an awesome description for your new site here. 
+  Guidance for authors wishing to create data and code supplements, and for replicators. 
+copyright: 'Copyright &copy; 2023 Social Science Data Editors. All Rights Reserved.'
+credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
+logo: assets/ssde-logo.jpeg
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+include:
+ - announcements
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+social:
+  - title: github
+    url: https://github.com/social-science-data-editors
+
+# navbar
+navbar:
+  - title: About
+    link: "#about"
+  - title: Standards
+    link: "#standards"
+  - title: Guidance
+    link: "#guidance"
+  - title: FAQ
+    link: "#faq"
+  - title: Contact
+    link: "#contact"
+
+# for the format page
+format_day: Tuesday
+format_time: '4:15 PM Eastern'
+format_format: online
+format_length: 60 
+
+# Sessions should be ordered by date - they will appear on the website in the order listed here, no additional sorting happens!
+# Session-specific images should be in img/sessions/{{ IMG }}
+standards:
+  - title: 'Data and Code Availability Standard'
+    content: 'The Data and Code Availability Standard (DCAS) is a standard for sharing research code and data, endorsed by leading journals in social sciences.'
+    url: https://datacodestandard.org/
+    img: dcas.png
+    doi: 10.5281/zenodo.7436134
+    id: dcas
+  - title: 'Template README'
+    content: "One of the most crucial dimensions that Institutional Review Boards are interested in are the protocols that researchers have in place to protect their subjects' privacy. This often leads to researchers writing in their IRB protocols that they will destroy their data once their project is complete. Understandably, however, destruction of data makes it impossible to verify and replicate work, which is increasingly becoming a vital part of modern science. How should data privacy be handled in the wake of the replication crisis? What protocols and standards should be put in place to minimize the risk of data leakage? Or should data be destroyed after some time span?"
+    img: template-readme.png
+    url: https://social-science-data-editors.github.io/template_README/
+    doi: 10.5281/zenodo.4319999
+    id: readme
+
+projects:
+  - title: Guidance	
+    url: https://social-science-data-editors.github.io/guidance/Requested_information.html
+    img: guidance.png
+    id: guidance
+  - title: 'FAQ'	
+    content: 'A growing list of frequently asked questions and answers, complementing journal FAQs. If you have questions or answers to add, please notify us by creating a [new issue](https://github.com/social-science-data-editors/guidance/issues/new).'
+    img: FAQ
+ 
