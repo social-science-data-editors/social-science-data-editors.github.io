@@ -1,6 +1,6 @@
 ---
 layout: default
-img: screenshot-readmepng
+img: screenshot-readme.png
 category: readme
 title: README template
 linkurl: https://social-science-data-editors.github.io/template_README/

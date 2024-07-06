@@ -14,18 +14,6 @@ logo: /assets/ssde-logo.jpeg
 
 
 # ----------------------- #
-#  Stuff about the society#
-# ----------------------- #
-
-registration: (coming soon)
-president:  John M. Abowd
-treasurer: Alan Karr 
-secretary: Alan Karr
-board:
-  - Jerome Reiter
-  - Aleksandra Slavković
-
-# ----------------------- #
 #    Jekyll & Plugins     #
 # ----------------------- #
 
@@ -41,19 +29,16 @@ plugins:
 # ----------------------- #
 
 social:
-  - title: journal
-    icon: newspaper-o
-    url: https://journalprivacyconfidentiality.org/
   - title: github
     icon: github
-    url: https://github.com/journalprivacyconfidentiality/
+    url: https://github.com/social-science-data-editors/
 
 navigation:
-  - title: Purpose
-    url: /#purpose
-  - title: Journal
-    url: /#journal
-  - title: Other
-    url: /#tpdp
-  - title: About
+  - title: DCAS
+    url: /#dcas
+  - title: README
+    url: /#readme
+  - title: Guidance
+    url: /#guidance
+  - title: Contact
     url: /#contact
