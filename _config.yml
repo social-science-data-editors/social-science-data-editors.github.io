@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: https://social-science-data-editors.github.io/new
+url: https://social-science-data-editors.github.io/
 title: Social Science Data Editors
 email: your-email@domain.com
 author: SSDE
@@ -35,10 +35,10 @@ social:
 
 navigation:
   - title: DCAS
-    url: /#dcas
+    url: /new/#dcas
   - title: README
-    url: /#readme
+    url: /new/#readme
   - title: Guidance
-    url: /#guidance
+    url: /new/#guidance
   - title: Contact
-    url: /#contact
+    url: /new/#contact
