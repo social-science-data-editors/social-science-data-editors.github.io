@@ -1,6 +1,6 @@
 ---
 layout: default
-img: 
+img: learning-technology-electronic-device-computer-job-laptop-1553321-pxhere.com.jpg
 category: guidance
 title: Guidance for Authors
 linkurl: /guidance

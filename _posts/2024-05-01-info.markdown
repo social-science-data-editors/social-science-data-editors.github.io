@@ -1,6 +1,8 @@
 ---
 layout: default
 category: contact
+img: pexels-fauxels-3184323.jpg
+imgcredit: Photo by fauxels: https://www.pexels.com/photo/group-of-people-seated-around-table-discussing-3184323/
 title: Participating
 linkurl: mailto:socsci-data-editors-l-request@cornell.edu?subject=join
 description: |
