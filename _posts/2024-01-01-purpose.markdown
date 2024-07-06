@@ -1,0 +1,11 @@
+---
+layout: default
+img: 
+category: guidance
+title: Guidance for Authors
+linkurl: /guidance
+description: |
+---
+(under development)
+
+We provide guidance to authors who wish to create replication packages.

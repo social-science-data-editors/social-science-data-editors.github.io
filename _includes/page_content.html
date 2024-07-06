@@ -1,0 +1,81 @@
+<section id="information">
+<!-- Page Content -->
+{% for post in site.posts reversed %}
+  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thecycle == 'odd' %}
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-8">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <a id="{{ post.category }}" class="anchor-element" aria-label="Permalink: {{ post.title }}" >
+                    <h2 class="section-heading">{{ post.title }}</h2></a>
+                    <div class="lead">{{ post.content }}</div>
+                    {% if post.linkurl %}
+                    <div class="linkurl">
+                    <a href="{{ post.linkurl }}" class="btn btn-default btn-lg">To learn more</a>
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="col-lg-4">
+                    {% if post.img %}
+                        {% if post.linkurl %}
+                        <a href="{{ post.linkurl }}" alt="Link to more information">
+                        {% endif %}
+                        <img class="img-responsive" src="{{ site.url }}/assets/img/{{ post.img }}" alt="">
+                        {% if post.linkurl %}
+                        </a>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+    {% else %}
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    {% if post.img %}
+                        {% if post.linkurl %}
+                        <a href="{{ post.linkurl }}" alt="Link to more information">
+                        {% endif %}
+                        <img class="img-responsive" src="{{ site.url }}/assets/img/{{ post.img }}" alt="">
+                        {% if post.linkurl %}
+                        </a>
+                        {% endif %}
+                    {% endif %}
+                  </div>
+                <div class="col-lg-8">
+                    <a id="{{ post.category }}" class="anchor-element" aria-label="Permalink: {{ post.title }}" >
+                        <h2 class="section-heading">{{ post.title }}</h2></a>
+                    <div class="lead">{{ post.content }}</div>
+                    {% if post.linkurl %}
+                    <div class="linkurl">
+                    <a href="{{ post.linkurl }}" class="btn btn-default btn-lg">To learn more</a>
+                    </div>
+                    {% endif %}
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+    {% endif %}
+{% endfor %}
+</section>

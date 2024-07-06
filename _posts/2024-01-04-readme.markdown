@@ -1,0 +1,18 @@
+---
+layout: default
+img: screenshot-readmepng
+category: readme
+title: README template
+linkurl: https://social-science-data-editors.github.io/template_README/
+description: |
+---
+
+SSDE also provides a [template README](https://social-science-data-editors.github.io/template_README/) incorporating best practices at social science journals, derived from reviewing over 2,500 replication packages.
+
+The most recent version is available at [https://social-science-data-editors.github.io/template_README/](https://social-science-data-editors.github.io/template_README/).
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7293838.svg)](https://doi.org/10.5281/zenodo.7293838)
+
+When using, please cite as
+
+> Lars Vilhuber, Connolly, Marie, Koren, Miklós, Llull, Joan, and Morrow, Peter. 2022. "A Template README for Social Science Replication Packages". v1.1. Zenodo. https://doi.org/10.5281/zenodo.7293838.
