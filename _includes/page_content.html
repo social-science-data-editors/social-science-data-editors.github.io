@@ -67,7 +67,8 @@
                     <div class="lead">{{ post.content }}</div>
                     {% if post.linkurl %}
                     <div class="linkurl">
-                    <a href="{{ post.linkurl }}" class="btn btn-default btn-lg">To learn more</a>
+                    <a href="{{ post.linkurl }}" class="btn btn-default btn-lg">
+                        {% if post.linktext %}{{ post.linktext }}{% else %}To learn more{% endif %}</a>
                     </div>
                     {% endif %}
                 </div>
