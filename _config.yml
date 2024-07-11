@@ -35,10 +35,10 @@ social:
 
 navigation:
   - title: DCAS
-    url: /new/#dcas
+    url: #dcas
   - title: README
-    url: /new/#readme
+    url: #readme
   - title: Guidance
-    url: /new/#guidance
+    url: #guidance
   - title: Contact
-    url: /new/#contact
+    url: #contact
