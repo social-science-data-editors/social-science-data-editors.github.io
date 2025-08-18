@@ -48,6 +48,10 @@ social:
     url: https://github.com/social-science-data-editors/
 
 navigation:
+  - title: Home
+    url: /
+  - title: Blog
+    url: /posts/
   - title: DCAS
     url: '#dcas'
   - title: README
@@ -78,6 +82,10 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _front
+  - scope:
+      path: "_front"
+      type: pages
 
 category_archive:
   type: liquid
