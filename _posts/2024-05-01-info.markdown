@@ -4,12 +4,11 @@ category: contact
 img: pexels-fauxels-3184323.jpg
 imgcredit: Photo by fauxels https://www.pexels.com/photo/group-of-people-seated-around-table-discussing-3184323/
 title: Participating
-linkurl: mailto:socsci-data-editors-l-request@cornell.edu?subject=join
+linkurl: 
 linktext: Join the mailing list
 description: |
 ---
 
-We have a (low-intensity) mailing list for data and reproducibility editors, and a more active working group that meets monthly, and maintains these resources. We use a mailing list for discussion.
+We have a [Slack channel](https://join.slack.com/t/socialscience-b2f5806/shared_invite/zt-3szay4upi-CXkWWALhGpnFM4uxIfbv4g) for data and reproducibility editors. A more active working group meets monthly on Zoom, and maintains these resources. 
 
-- to join general list, send email to [socsci-data-editors-l-request@cornell.edu](mailto:socsci-data-editors-l-request@cornell.edu?subject=join) with subject line "join". Approval required. You might contact any one of the working group members prior to sending the email.
-- to join the active working group, contact [Lars Vilhuber](mailto:lars.vilhuber@cornell.edu). Meetings are usually first Monday of the month, 11:00AM Eastern/17:00 Central European time.
+- to join either meeting space, contact [Lars Vilhuber](mailto:lars.vilhuber@cornell.edu). Meetings are currently fourth Thursday of the month, 10:00AM Eastern/16:00 Central European time.
