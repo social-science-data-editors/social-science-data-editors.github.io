@@ -47,8 +47,13 @@
 						<h1>{{ page.title }}</h1>
 						<h3>{{ page.subTitle }}</h3>
 						<hr class="intro-divider">
+                        {% if page.description %}
+                        <div class="lead">
+                            <p>
 						{{ page.description }}
-					</div>
+                            </p>
+						</div>
+                        {% endif %}
 				</div>
 			</div>
 
