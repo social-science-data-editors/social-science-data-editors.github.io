@@ -25,7 +25,7 @@ _includes/
   js.html            ← JS scripts (jQuery, Bootstrap, landing-page.js)
   custom-head.html   ← Favicons injected into <head>
 assets/
-  css/               ← Bootstrap + landing-page.css (custom theme)
+  css/               ← Bootstrap + landing-page.css (template) + ssde.css (site-specific, do not edit landing-page.css)
   img/               ← Section images referenced by post front matter
   font-awesome-4.1.0/
 dcas/index.html      ← Static HTML redirect (not a Jekyll post)

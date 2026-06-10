@@ -1,0 +1,31 @@
+/* Site-specific styles for social-science-data-editors.github.io */
+
+/* Styled tables for page layout (e.g. members page) */
+.page-content table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.page-content table > thead > tr > th,
+.page-content table > tbody > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+.page-content table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+.page-content table > tbody > tr:nth-child(odd) > td {
+    background-color: #fff;
+}
+
+.page-content table > tbody > tr:nth-child(even) > td {
+    background-color: #f8f8f8;
+}
