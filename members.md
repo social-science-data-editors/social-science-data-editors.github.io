@@ -4,12 +4,29 @@ title: Members
 subTitle: Social Science Data Editors
 ---
 
-The following data and reproducibility editors are current members of the Social Science Data Editors group.
+<p>The following data and reproducibility editors are current members of the Social Science Data Editors group.</p>
 
-| Name | Affiliation | Journal(s) | Guidance | Policy |
-|------|-------------|------------|----------|--------|
-{% for member in site.data.members %}
-| {{ member.name }} | {{ member.affiliation }} | {{ member.journals }} | {% if member.guidance %}[Link]({{ member.guidance }}){% endif %} | {% if member.policy %}[Link]({{ member.policy }}){% endif %} |
-{% endfor %}
+<table class="members-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Affiliation</th>
+      <th>Journal(s)</th>
+      <th>Guidance</th>
+      <th>Policy</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for member in site.data.members %}
+    <tr>
+      <td>{{ member.name }}</td>
+      <td>{{ member.affiliation }}</td>
+      <td>{{ member.journals }}</td>
+      <td>{% if member.guidance %}<a href="{{ member.guidance }}">Link</a>{% endif %}</td>
+      <td>{% if member.policy %}<a href="{{ member.policy }}">Link</a>{% endif %}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
-If you are interested in joining, see the [Contact](/#contact) section on the main page.
+<p>If you are interested in joining, see the <a href="/#contact">Contact</a> section on the main page.</p>

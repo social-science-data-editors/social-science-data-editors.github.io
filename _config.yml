@@ -19,7 +19,7 @@ logo: /assets/ssde-logo.jpeg
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /posts/:title/
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

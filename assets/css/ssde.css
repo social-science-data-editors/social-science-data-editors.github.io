@@ -6,33 +6,43 @@
     background-color: #fff;
 }
 
+/* Match font size and style of landing page .lead */
+.page-content {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
 /* Styled tables for page layout (e.g. members page) */
-.page-content table {
+.members-table {
     width: 100%;
     max-width: 100%;
     margin-bottom: 20px;
     border-collapse: collapse;
 }
 
-.page-content table > thead > tr > th,
-.page-content table > tbody > tr > td {
+.members-table > thead > tr > th,
+.members-table > tbody > tr > td {
     padding: 10px 12px;
     line-height: 1.42857143;
     vertical-align: top;
     border: 1px solid #ddd;
 }
 
-.page-content table > thead > tr > th {
+.members-table > thead > tr > th {
     vertical-align: bottom;
     border-bottom: 2px solid #aaa;
     background-color: #eee;
     font-weight: bold;
 }
 
-.page-content table > tbody > tr:nth-child(odd) > td {
+.members-table > tbody > tr:nth-child(odd) > td {
     background-color: #fff;
 }
 
-.page-content table > tbody > tr:nth-child(even) > td {
+.members-table > tbody > tr:nth-child(even) > td {
     background-color: #f5f5f5;
+}
+
+.members-table > tbody > tr:hover > td {
+    background-color: #eaf4fb;
 }
