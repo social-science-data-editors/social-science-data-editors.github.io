@@ -41,8 +41,8 @@ navigation:
   - title: Guidance
     url: '#guidance'
   - title: Reference
-    url: '/reference'
+    url: '/reference/'
   - title: Members
-    url: '/members'
+    url: '/members/'
   - title: Contact
     url: '#contact'
