@@ -1,3 +1,4 @@
+
 ---
 name: jekyll-ssde-site
 description: "Use when: editing or adding content to the SSDE Jekyll website; modifying navigation, sections, or layout; understanding how posts become page sections; adding images or links to sections; updating _config.yml site settings. Covers site architecture, content model, front matter fields, navigation, and how posts render as alternating sections on the landing page."
@@ -14,7 +15,8 @@ _config.yml          ← Global settings: title, navigation, social links, logo,
 index.html           ← Root page (front matter only: layout, title, subTitle)
 _posts/              ← Each file = one content section on the homepage
 _layouts/
-  default.html       ← Single layout used by all pages
+  default.html       ← Landing page layout: header + post sections iterator
+  page.html          ← Standalone page layout: header + page content (no posts)
 _includes/
   head.html          ← <head> block (CSS, meta tags)
   header.html        ← Navbar + hero banner (uses page.title, page.subTitle, site.logo)
@@ -31,7 +33,9 @@ dcas/index.html      ← Static HTML redirect (not a Jekyll post)
 
 ## Layout Chain
 
-Every page uses the single `default` layout:
+Two layouts are available:
+
+**`default`** — used by the landing page and posts. Renders the full post-sections iterator:
 
 ```
 index.html (front matter: layout: default)
@@ -39,6 +43,18 @@ index.html (front matter: layout: default)
         ├── _includes/head.html
         ├── _includes/header.html        ← navbar + hero section (#home anchor)
         ├── _includes/page_content.html  ← all post-based sections
+        ├── _includes/footer.html
+        └── _includes/js.html
+```
+
+**`page`** — used by standalone pages (e.g. `members.md`). Renders the page's own Markdown content inside a Bootstrap container, with no posts iteration:
+
+```
+members.md (front matter: layout: page)
+  └── _layouts/page.html
+        ├── _includes/head.html
+        ├── _includes/header.html        ← same navbar + hero
+        ├── {{ content }}               ← page's own Markdown
         ├── _includes/footer.html
         └── _includes/js.html
 ```
