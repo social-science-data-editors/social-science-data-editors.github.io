@@ -14,6 +14,7 @@ subTitle: Social Science Data Editors
       <th>Journal(s)</th>
       <th>Guidance</th>
       <th>Policy</th>
+      <th>Packages</th>
     </tr>
   </thead>
   <tbody>
@@ -21,9 +22,10 @@ subTitle: Social Science Data Editors
     <tr>
       <td>{{ member.name }}</td>
       <td>{{ member.affiliation }}</td>
-      <td>{{ member.journals }}</td>
+      <td>{% if member.journal_url %}<a href="{{ member.journal_url }}">{{ member.journals }}</a>{% else %}{{ member.journals }}{% endif %}</td>
       <td>{% if member.guidance %}<a href="{{ member.guidance }}">Link</a>{% endif %}</td>
       <td>{% if member.policy %}<a href="{{ member.policy }}">Link</a>{% endif %}</td>
+      <td>{% if member.archive %}<a href="{{ member.archive }}">Link</a>{% endif %}</td>
     </tr>
     {% endfor %}
   </tbody>
