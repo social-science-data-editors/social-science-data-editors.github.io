@@ -1,5 +1,11 @@
 /* Site-specific styles for social-science-data-editors.github.io */
 
+/* Standalone page section (white background with vertical padding) */
+.page-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
 /* Styled tables for page layout (e.g. members page) */
 .page-content table {
     width: 100%;
@@ -10,16 +16,17 @@
 
 .page-content table > thead > tr > th,
 .page-content table > tbody > tr > td {
-    padding: 8px;
+    padding: 10px 12px;
     line-height: 1.42857143;
     vertical-align: top;
-    border-top: 1px solid #ddd;
+    border: 1px solid #ddd;
 }
 
 .page-content table > thead > tr > th {
     vertical-align: bottom;
-    border-bottom: 2px solid #ddd;
-    background-color: #f8f8f8;
+    border-bottom: 2px solid #aaa;
+    background-color: #eee;
+    font-weight: bold;
 }
 
 .page-content table > tbody > tr:nth-child(odd) > td {
@@ -27,5 +34,5 @@
 }
 
 .page-content table > tbody > tr:nth-child(even) > td {
-    background-color: #f8f8f8;
+    background-color: #f5f5f5;
 }
