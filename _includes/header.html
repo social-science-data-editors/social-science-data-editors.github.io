@@ -49,10 +49,10 @@
 						<hr class="intro-divider">
                         {% if page.description %}
                         <div class="lead">
-                            <p>
-						{{ page.description }}
-                            </p>
-						</div>
+                            <div style="color: #333;">
+						{{ page.description | markdownify }}
+                            </div>
+                        </div>
                         {% endif %}
 				</div>
 			</div>
