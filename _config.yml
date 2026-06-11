@@ -4,11 +4,11 @@
 
 url: https://social-science-data-editors.github.io/
 title: Social Science Data Editors
-email: your-email@domain.com
+email: noemail@anywhere.com
 author: SSDE
 description: > # "Write an awesome description for your new site here. 
   The Social Science Data Editors work to improve reproducibility and transparency in social science research.
-copyright: 'Copyright &copy; 2024 Social Science Data Editors. All Rights Reserved.'
+copyright: 'Copyright &copy; 2026 Social Science Data Editors. All Rights Reserved.'
 credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created from <a href="https://github.com/swcool">swcool</a>.'
 logo: /assets/ssde-logo.jpeg
 
@@ -19,7 +19,7 @@ logo: /assets/ssde-logo.jpeg
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /posts/:title/
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -41,6 +41,8 @@ navigation:
   - title: Guidance
     url: '#guidance'
   - title: Reference
-    url: '/reference'
+    url: '/reference/'
+  - title: Members
+    url: '/members/'
   - title: Contact
     url: '#contact'
