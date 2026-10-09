@@ -46,3 +46,9 @@
 .members-table > tbody > tr:hover > td {
     background-color: #eaf4fb;
 }
+
+/* Section anchors: keep headings clear of the fixed navbar when jumped to */
+.anchor-element {
+    display: block;
+    scroll-margin-top: 60px;
+}
